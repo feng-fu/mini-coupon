@@ -1,0 +1,28 @@
+<view class="coupon-header">
+  <image src="cloud://prod-3f3ad5.7072-prod-3f3ad5-1258496121/life-head.jpeg" mode="widthFix" />
+</view>
+<view class="bg" style="background-color: {{backgroundColor}}"></view>
+
+<view class="coupon-item" wx:for="{{coupons}}" wx:key="title" data-index="{{index}}" bindtap="handleJump">
+  <view class="coupon-item-left" style="background-color: {{item.color}};">
+    <text wx:if="{{item.type === 'money'}}">¥ </text>{{item.money}}
+  </view>
+  <view class="coupon-item-center">
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+  </view>
+  <view class="coupon-item-right" style="">
+    <view class="brand">
+      <view class="brand-title">{{item.title}}</view>
+      <view class="brand-count">{{item.label}}</view>
+    </view>
+    <image class="item-logo" src="{{item.logo}}" wx:if="{{item.logo}}" mode="heightFix" />
+    <view class="click-btn" style="animation-delay: {{index * 1}}s">
+      立即领取
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/stype/stype.wxml-->
+
+<view class="container">
+  <view class="banner-container">
+    <image class="s-banner" src="{{url}}" wx:if="{{url}}" mode="widthFix" />
+  </view>
+  <production productions="{{productions}}" />
+  <view class="no-more" wx:if="{{total_count && productions.length >= total_count}}">没有更多啦...</view>
+</view>

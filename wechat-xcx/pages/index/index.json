@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "production": "/components/production/production",
+    "navbar": "/components/navbar/index"
+  },
+  "navigationBarTitleText": "拼多多券",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 60
+}

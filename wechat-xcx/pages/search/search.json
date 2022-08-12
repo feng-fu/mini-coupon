@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "production": "/components/item/index"
+  },
+  "navigationBarTitleText": "搜索",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 60
+}

@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/all/all",
+          "pathName": "pages/all/all",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/banners/banners",
+          "pathName": "pages/banners/banners",
+          "query": "title=%E6%8B%BC%E5%A4%9A%E5%A4%9A%E4%B8%87%E4%BA%BA%E5%9B%A2&url=https%3A%2F%2Ft16img.yangkeduo.com%2Fpdd_oms%2F2020-12-13%2F0cf02d3c49ebfafee1582b9150e6c2ff.jpg&tags=10635",
+          "scene": null
+        },
+        {
+          "name": "pages/stype/stype",
+          "pathName": "pages/stype/stype",
+          "query": "type=&title=618&banner=cloud%3A%2F%2Fprod-3f3ad5.7072-prod-3f3ad5-1258496121%2Fsub-entry%2F618.jpeg&tags=10939",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
+          "query": "gid=Y9z2mXEH-yFKqAqhwfDZNvb5aRz3NDjv_JQELVMIwMi&search_id=79c3dee75c0784f9eab88a341cbcb011b49",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

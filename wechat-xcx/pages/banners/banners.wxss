@@ -1,0 +1,20 @@
+/* pages/stype/stype.wxss */
+
+
+.s-banner {
+  width: 100vw;
+  display: block;
+}
+
+.banner-container {
+  width: 100vw;
+}
+
+.no-more {
+  font-size: 26rpx;
+  color: #999;
+  background: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+}

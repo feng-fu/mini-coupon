@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <navbar />
+  <view class="sell-container">
+    <swiper class="sell-swiper" wx:if="{{sellBanners && sellBanners.length}}" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+      <block wx:for="{{sellBanners}}" wx:key="image">
+        <swiper-item class="sell-item" data-id="{{item.appId}}" data-path="{{item.path}}" bindtap="gotoOtherMini">
+          <image src="{{item.image}}" mode="scaleToFill" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="menu">
+    <view class="menu-item" wx:for="{{subBanners}}" wx:key="type"  bindtap="gotoStype" data-type="{{item.type}}" data-tags="{{item.tags}}" data-title="{{item.title}}" data-banner="{{item.banner}}">
+      <view class="menu-item-content">
+        <image src="{{item.image}}" mode="aspectFit"/>
+      </view>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <view class="production-tools" style="top: {{navbarHeight}}px;">
+    <scroll-view class="category" scroll-x="{{true}}" style="width:100%" scroll-y="{{false}}">
+      <view wx:for="{{categorys}}" wx:key="oid" class="category-item  {{s_category_oid === item.oid ? 'category-item-s' : ''}}" data-oid="{{item.oid || ''}}" data-ctype="{{item.ctype || ''}}" bindtap="changeCategoryId">{{item.text}}</view>
+    </scroll-view>
+    <view class="tools">
+      <view class="{{sort_type === 0 ? 'tool-s' : ''}}" bindtap="changeSortType" data-type="zh">综合</view>
+      <view class="{{sort_type === 6 ? 'tool-s' : ''}}" bindtap="changeSortType" data-type="xl">销量</view>
+      <view class="{{sort_type === 8 ? 'tool-s' : ''}}" bindtap="changeSortType" data-type="yhq">优惠券</view>
+      <view class="{{sort_type === 3 || sort_type === 4 ? 'tool-s' : ''}}" bindtap="changeSortType" data-type="jg">价格
+        <image src="/images/px.png"  mode="aspectFit" wx:if="{{sort_type !== 3 && sort_type !== 4}}"/>
+        <image src="/images/sx.png"  mode="aspectFit" wx:if="{{sort_type === 3}}"/>
+        <image src="/images/jx.png"  mode="aspectFit" wx:if="{{sort_type === 4}}"/>
+      </view>
+    </view>
+  </view>
+  <production productions="{{productions}}" />
+</view>

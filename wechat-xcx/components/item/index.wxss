@@ -1,0 +1,91 @@
+/* components/production.wxss */
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+}
+
+.goods-item {
+  width: 348rpx;
+  background-color: #fff;
+  margin: 10rpx 13rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+.p-left-cover {
+  width: 348rpx;
+  height: 348rpx;
+}
+.p-right-view {
+  display: flex;
+  flex-direction: column;
+}
+.p-name {
+  font-size: 26rpx;
+  word-break: break-all;
+  line-height: 30rpx;
+  display: block;
+  color: #333;
+  margin: 10rpx 6rpx;
+  max-height: 60rpx;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.p-info {
+  padding: 0 6rpx;
+}
+.p-info-discount {
+  border: 2rpx solid #ec6933;
+  font-size: 22rpx;
+  padding: 2rpx 4rpx;
+  height: 30rpx;
+  border-radius: 15rpx;
+  color: #ec6933;
+  margin-right: 10rpx;
+}
+.p-info-sale {
+  font-size: 22rpx;
+  height: 30rpx;
+  color: grey;
+}
+
+.p-price {
+  margin: 10rpx 6rpx;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.p-price1 {
+  font-size: 24rpx;
+  margin-right: 8rpx;
+  color: #E02E24;
+}
+.p-price2 {
+  font-size: 40rpx;
+  color: #E02E24;
+  margin-right: 10rpx;
+}
+.p-price3 {
+  font-size: 22rpx;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.ppre {
+  color: #E02E24;
+  font-weight: bold;
+  font-size: 24rpx !important;
+}
+
+.p-share {
+  text-align: right;
+  font-size: 24rpx;
+  background-color: #ec6933;
+  color: white;
+  padding: 6rpx 10rpx;
+  height: 34rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}

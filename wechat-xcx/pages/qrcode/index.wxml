@@ -1,0 +1,8 @@
+<view class="qrcode">
+  <view class="qrcode-preview" bindlongpress="pressSaveImage">
+    <canvas style="background:#f1f1f1;" id="mycanvas" canvas-id="mycanvas"/>
+  </view>
+  <view class="qrcode-prompt" wx:if="{{generated}}">提示：<text>长按图片</text>保存至手机相册</view>
+  <textarea class="qrcode-input" bindinput="onChange" value="{{value}}" placeholder="请输入文本或网址" />
+  <view class="qrcode-btn" bindtap="onGenerate">生成二维码</view>
+</view>

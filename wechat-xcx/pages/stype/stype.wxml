@@ -1,0 +1,8 @@
+<!--pages/stype/stype.wxml-->
+
+<view class="container">
+  <view class="banner-container" wx:if="{{banner}}">
+    <image class="s-banner" src="{{banner}}" wx:if="{{banner}}" mode="widthFix" />
+  </view>
+  <production productions="{{productions}}" />
+</view>

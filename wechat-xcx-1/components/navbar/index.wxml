@@ -1,0 +1,13 @@
+<view class="navbar" style="height: {{navbarHeight}}px;">
+  <div
+    class="search-input"
+    placeholder="{{plceholder}}"
+    style="height: {{menuHeight}}px; min-height: {{menuHeight}}px; line-height: {{menuHeight}}px; bottom: {{menuBotton}}px;"
+    bindtap="handleSearch"  
+  >
+  <image class="search-icon" src="/images/search-1.png" />
+    {{placeholder}}
+  </div>
+</view>
+
+<view class="navbar-content" style="margin-top: {{navbarHeight}}px"></view>
